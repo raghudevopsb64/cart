@@ -3,22 +3,11 @@ pipeline {
 
   triggers {
     GenericTrigger(
-        genericVariables: [
-            [key: 'ref', value: '$.ref']
-        ],
-
-        causeString: 'Triggered on $ref',
-
         token: 'roboshop',
         tokenCredentialId: '',
-
-        printContributedVariables: true,
-        printPostContent: true,
-
+        printContributedVariables: false,
+        printPostContent: false,
         silentResponse: false,
-
-        regexpFilterText: '$ref',
-        regexpFilterExpression: 'refs/heads/' + 'main'
     )
   }
 
