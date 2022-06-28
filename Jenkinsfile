@@ -1,23 +1,4 @@
-pipeline {
-  agent any
+@Library('roboshop-library') _
 
-  triggers {
-    GenericTrigger(
-        token: 'roboshop',
-        tokenCredentialId: '',
-        printContributedVariables: false,
-        printPostContent: false,
-        silentResponse: false,
-    )
-  }
+multibranchTest()
 
-
-  stages {
-    stage('test') {
-      steps {
-        echo 'test'
-      }
-    }
-  }
-}
-//
