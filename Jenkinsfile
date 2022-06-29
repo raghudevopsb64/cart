@@ -1,4 +1,6 @@
 @Library('roboshop-library') _
 
-multibranchTest()
+env.COMPONENT="cart"
+env.APPTYPE="nodejs"
+ciPipeline()
 
