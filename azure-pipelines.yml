@@ -18,7 +18,9 @@ steps:
       docker build -t 739561048503.dkr.ecr.us-east-1.amazonaws.com/cart:latest .
     displayName: Docker Build
 
-#  - script: |
-#      docker build -t 739561048503.dkr.ecr.us-east-1.amazonaws.com/cart:latest .
-#    displayName: Push Docker Image
+  - script: |
+      docker build -t 739561048503.dkr.ecr.us-east-1.amazonaws.com/cart:latest .
+    displayName: Push Docker Image
+    condition: contains(variables['Build.SourceBranch'], 'refs/tags')
+
 
