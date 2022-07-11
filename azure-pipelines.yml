@@ -1,8 +1,8 @@
 trigger:
   branches:
-    include: [ * ]
+    include: [ "*" ]
   tags:
-    include: [ * ]
+    include: [ "*" ]
 
 
 pool:
