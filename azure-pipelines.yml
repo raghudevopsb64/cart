@@ -11,7 +11,6 @@ pool:
 steps:
   - script: |
       npm install
-      env
     displayName: Download Dependencies
 
   - script: |
