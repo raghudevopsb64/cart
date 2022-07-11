@@ -1,5 +1,9 @@
 trigger:
-- main
+  branches:
+    include: [ * ]
+  tags:
+    include: [ * ]
+
 
 pool:
   name: 'B64'
