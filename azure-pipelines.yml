@@ -4,27 +4,7 @@ trigger:
 pool:
   name: 'B64'
 
-stages:
-- stage: Test1
-  jobs:
-   - job: Job1
-     steps:
-      - script: echo Hello, world!
-        displayName: 'Run a one-line script'
-
-      - script: |
-          echo Add other tasks to build, test, and deploy your project.
-          echo See https://aka.ms/yaml
-        displayName: 'Run a multi-line script'
-
-- stage: Test2
-  jobs:
-   - job: Job1
-     steps:
-      - script: echo Hello, world!
-        displayName: 'Run a one-line script'
-
-      - script: |
-          echo Add other tasks to build, test, and deploy your project.
-          echo See https://aka.ms/yaml
-        displayName: 'Run a multi-line script'
+steps:
+  - script: |
+      docker build -t 739561048503.dkr.ecr.us-east-1.amazonaws.com/cart:latest .
+    displayName: Docker Build
