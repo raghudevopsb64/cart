@@ -7,9 +7,14 @@ pool:
 steps:
   - script: |
       npm install
+      env
     displayName: Download Dependencies
 
   - script: |
       docker build -t 739561048503.dkr.ecr.us-east-1.amazonaws.com/cart:latest .
     displayName: Docker Build
+
+#  - script: |
+#      docker build -t 739561048503.dkr.ecr.us-east-1.amazonaws.com/cart:latest .
+#    displayName: Push Docker Image
 
