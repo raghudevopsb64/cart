@@ -8,3 +8,5 @@ configMap:
     REDIS_HOST: redis
     CATALOGUE_HOST: catalogue
     CATALOGUE_PORT: "8080"
+service:
+  containerPort: 8080
