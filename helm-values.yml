@@ -1,3 +1,10 @@
 component:
   name: cart
   version: 4.0.3
+configMap:
+  create: yes
+  name: cart
+  data:
+    REDIS_HOST: redis
+    CATALOGUE_HOST: catalogue
+    CATALOGUE_PORT: 8080
