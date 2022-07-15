@@ -5,7 +5,7 @@ configMap:
   create: yes
   name: cart
   data:
-    REDIS_HOST: redis
+    REDIS_HOST: redis-master
     CATALOGUE_HOST: catalogue
     CATALOGUE_PORT: "8080"
 service:
